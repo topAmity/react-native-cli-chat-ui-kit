@@ -1,31 +1,17 @@
 import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from '@amityco/react-native-cli-chat-ui-kit';
+import { AmityUiKitProvider, AmityUiKitChat } from '@amityco/react-native-cli-chat-ui-kit';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <AmityUiKitProvider
+      apiKey="b3babb0b3a89f4341d31dc1a01091edcd70f8de7b23d697f"
+      apiRegion="sg"
+      userId="topAmity"
+      displayName="topAmity"
+      apiEndpoint="https://api.sg.amity.co"
+    >
+      <AmityUiKitChat />
+    </AmityUiKitProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});

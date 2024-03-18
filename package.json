@@ -77,8 +77,13 @@
     "@types/react": "^18.2.44"
   },
   "peerDependencies": {
+    "@react-navigation/native": "*",
+    "@react-navigation/native-stack": "*",
+    "@react-navigation/stack": "*",
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-screens": "*"
   },
   "workspaces": [
     "example"
@@ -156,5 +161,19 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "@amityco/ts-sdk-react-native": "^6.19.0",
+    "i18next": "22.4.10",
+    "moment": "2.29.4",
+    "react-i18next": "12.1.5",
+    "react-native-awesome-alerts": "^2.0.0",
+    "react-native-image-picker": "5.1.0",
+    "react-native-image-viewing": "^0.2.2",
+    "react-native-pager-view": "6.1.4",
+    "react-native-paper": "^5.12.3",
+    "react-native-popup-menu": "^0.16.1",
+    "react-native-progress": "^5.0.1",
+    "react-native-svg": "^14.1.0"
   }
 }
