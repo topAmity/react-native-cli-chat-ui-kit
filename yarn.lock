@@ -30,6 +30,7 @@ __metadata:
     babel-plugin-module-resolver: ^5.0.0
     react: 18.2.0
     react-native: 0.73.6
+    react-native-image-picker: ^7.1.1
     react-native-safe-area-context: ^4.9.0
     react-native-screens: ^3.29.0
     react-native-svg: 14.1.0
@@ -11740,6 +11741,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 4ebf51c5bbc07e4631bda8d9a4cebc64758003ba689ff8cc3a75c4a177c499c6acc59bd9993ae43c9d636894ef945b7593ac5eff1aaf5cbb2f6441dab9b11640
+  languageName: node
+  linkType: hard
+
+"react-native-image-picker@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "react-native-image-picker@npm:7.1.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: ae2a0f49d9405c490482fb4c8fb049ab0539d419860ec410485afdb8c92b7237c805a3189eb527fb5ac0fdab288d36a8b678350ff12a9a64d57c2fb46ceadffb
   languageName: node
   linkType: hard
 
