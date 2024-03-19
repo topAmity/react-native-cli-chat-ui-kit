@@ -86,7 +86,7 @@ export default function RecentChat() {
       { sortBy: 'lastActivity', limit: 15, membership: 'member' },
       (value) => {
         setChannelData(value);
-        // subscribeChannels(channels);
+        subscribeChannels(channels);
         if (value.data.length === 0) {
           setLoadChannel(false);
         }
